@@ -1,0 +1,22 @@
+README.md
+  h_441bd1542c405a 1-37
+cmd/root.go
+  h_441bd1542c405a 1-51
+go.mod
+  h_441bd1542c405a 1-9
+go.sum
+  h_441bd1542c405a 1-11
+main.go
+  h_441bd1542c405a 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "c118321f4668e0c0d6c7e0d9d547f20c2d4acdb9",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
