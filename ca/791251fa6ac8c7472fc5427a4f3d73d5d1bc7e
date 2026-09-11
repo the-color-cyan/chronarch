@@ -1,0 +1,22 @@
+go.mod
+  h_441bd1542c405a 6
+go.sum
+  h_441bd1542c405a 2-3
+internal/domain/id.go
+  h_441bd1542c405a 1-12
+internal/domain/project.go
+  h_441bd1542c405a 3-4,8-30
+internal/domain/session.go
+  h_441bd1542c405a 11-12,17,20,23-27,32-33,44-48,53,70-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "ca791251fa6ac8c7472fc5427a4f3d73d5d1bc7e",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
