@@ -1,0 +1,14 @@
+docs/implementation-plan.md
+  h_441bd1542c405a 20,22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "5000b630b5fd8fbc929c5063a5647ce87ce050d9",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
