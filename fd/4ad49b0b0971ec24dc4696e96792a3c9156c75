@@ -1,0 +1,14 @@
+internal/domain/session.go
+  h_441bd1542c405a 3-9,14-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "fd4ad49b0b0971ec24dc4696e96792a3c9156c75",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
