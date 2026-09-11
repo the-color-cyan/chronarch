@@ -1,0 +1,18 @@
+internal/cli/project.go
+  h_441bd1542c405a 1-36
+internal/cli/root.go
+  h_441bd1542c405a 1
+internal/cli/session.go
+  h_441bd1542c405a 1-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "d95ab134538285477f75330a326072bc2e290604",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
