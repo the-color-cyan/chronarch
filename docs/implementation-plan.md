@@ -17,5 +17,6 @@ The ability to start and stop a time tracking session that is stored and categor
 
 - CLI Core
 - Projects
-- Tracking Sessions
+- Sessions
 - Data Viewing
+- Project and Session Storage
