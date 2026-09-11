@@ -8,20 +8,29 @@ import (
 
 var ErrInvalidTimeRange = errors.New("invalid time range")
 
+type SessionID string
+
 type Session struct {
 	start   time.Time
 	end     time.Time
 	project *Project
+	id      SessionID
 }
 
-func NewSession(project *Project, at time.Time) *Session {
+func NewSession(project *Project, at time.Time) (*Session, error) {
 	var end time.Time
+
+	id, err := newSessionID()
+	if err != nil {
+		return nil, err
+	}
 
 	return &Session{
 		start:   at,
 		end:     end,
 		project: project,
-	}
+		id:      id,
+	}, nil
 }
 
 func NewRetrospectiveSession(
@@ -32,10 +41,16 @@ func NewRetrospectiveSession(
 		return nil, err
 	}
 
+	id, err := newSessionID()
+	if err != nil {
+		return nil, err
+	}
+
 	return &Session{
 		start,
 		end,
 		project,
+		id,
 	}, nil
 }
 
@@ -50,6 +65,15 @@ func (s *Session) Stop(at time.Time) error {
 
 func (s *Session) Duration() time.Duration {
 	return s.end.Sub(s.start)
+}
+
+func newSessionID() (SessionID, error) {
+	id, err := newID()
+	if err != nil {
+		return "", err
+	}
+
+	return SessionID(id), nil
 }
 
 func validateTimeRange(start, end time.Time) error {
