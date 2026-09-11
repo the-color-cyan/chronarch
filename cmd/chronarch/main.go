@@ -1,7 +1,12 @@
 package main
 
-import cmd "chronarch/internal/cli"
+import (
+	"chronarch/internal/cli"
+	"os"
+)
 
 func main() {
-	cmd.Execute()
+	if err := cli.NewRootCmd().Execute(); err != nil {
+		os.Exit(1)
+	}
 }
