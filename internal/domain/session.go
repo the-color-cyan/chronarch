@@ -54,6 +54,18 @@ func NewRetrospectiveSession(
 	}, nil
 }
 
+func (s *Session) StartTime() time.Time { return s.start }
+
+func (s *Session) EndTime() time.Time { return s.end }
+
+func (s *Session) Project() *Project { return s.project }
+
+func (s *Session) ID() SessionID { return s.id }
+
+func (s *Session) Duration() time.Duration {
+	return s.end.Sub(s.start)
+}
+
 func (s *Session) Stop(at time.Time) error {
 	if err := validateTimeRange(s.start, at); err != nil {
 		return err
@@ -61,10 +73,6 @@ func (s *Session) Stop(at time.Time) error {
 
 	s.end = at
 	return nil
-}
-
-func (s *Session) Duration() time.Duration {
-	return s.end.Sub(s.start)
 }
 
 func newSessionID() (SessionID, error) {
