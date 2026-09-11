@@ -1,0 +1,20 @@
+cmd/chronarch/main.go
+  h_441bd1542c405a 3-6,9-11
+internal/cli/project.go
+  h_441bd1542c405a 9-17,28-29
+internal/cli/root.go
+  h_441bd1542c405a 7-12,14,17-20,29-35
+internal/cli/session.go
+  h_441bd1542c405a 9-17,28-29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "2a7ba858d2fea5e4981c80094d2bae4f3e5200a4",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
