@@ -1,0 +1,22 @@
+go.mod
+  s_f74159df56682c::t_345427f5d1e7e4 7,9
+  s_f74159df56682c::t_5e567271ea3505 13-14,16-20,22-25
+go.sum
+  s_f74159df56682c::t_a3155e443a82ab 2-11,16-27,29-36,42-48,50-53,55-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "c2280cc429654e81d4acc57a91160a707d4ad675",
+  "prompts": {},
+  "sessions": {
+    "s_f74159df56682c": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a0e46c-2689-743f-8ce1-a44b12f31d58",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
