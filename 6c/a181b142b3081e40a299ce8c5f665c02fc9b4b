@@ -1,0 +1,26 @@
+internal/storage/sql.go
+  s_f74159df56682c::t_d97a4a0043af27 9-10
+  s_f74159df56682c::t_beed745e2995d1 6-8
+  s_f74159df56682c::t_668954c9f75808 11-13
+  s_f74159df56682c::t_89b996d03b01f1 1-5,14-59
+cmd/chronarch/main.go
+  s_f74159df56682c::t_761d414338a7b9 8,13-14
+  s_f74159df56682c::t_3c0721b94b5491 5-7
+  s_f74159df56682c::t_ae1dfe824127cb 18-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "6ca181b142b3081e40a299ce8c5f665c02fc9b4b",
+  "prompts": {},
+  "sessions": {
+    "s_f74159df56682c": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a0e46c-2689-743f-8ce1-a44b12f31d58",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
