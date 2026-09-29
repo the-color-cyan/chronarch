@@ -1,0 +1,43 @@
+internal/config/config.go
+  s_f74159df56682c::t_02e313de3d040d 20,28-59,64,86,96,111,114
+  s_f74159df56682c::t_897ddcccce5a1a 18
+  s_f74159df56682c::t_5b349109d0325e 21-27,79,88,91,93
+  s_f74159df56682c::t_e068192b6e68cf 15-17
+  s_f74159df56682c::t_1dab0ceb7dce76 19
+  s_f74159df56682c::t_f2b39567ad7853 60-63
+  s_f74159df56682c::t_609ad0dd90381d 65-67,76-78
+  s_f74159df56682c::t_5d88fada18ab8d 80-85
+  s_f74159df56682c::t_8447b9b7e967e1 87
+  s_f74159df56682c::t_768306f2632caf 89-90
+  s_f74159df56682c::t_d80d6e43e6b110 92
+  s_f74159df56682c::t_69cbfdcccb197e 94-95
+  s_f74159df56682c::t_459ebcf082c395 97-99,108-110
+  s_f74159df56682c::t_daa5bc93ebc364 112-113
+  s_f74159df56682c::t_39894c69c65716 115-117
+  s_f74159df56682c::t_25cacf52067db8 1-14,68-75,100-107
+.gitignore
+  s_f74159df56682c::t_ba6df4ff34a818 1
+internal/config/config_test.go
+  s_f74159df56682c::t_49d848ec002931 1-32
+README.md
+  s_f74159df56682c::t_d2e5ec9355351d 25
+  s_f74159df56682c::t_b82580e09d6004 10-13
+  s_f74159df56682c::t_af67fbc3a36fbe 3-9
+  s_f74159df56682c::t_1e523d3b9a21fe 26
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "ee94a2402d90fd1293da385b9c0766d2045d3c8f",
+  "prompts": {},
+  "sessions": {
+    "s_f74159df56682c": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a0e46c-2689-743f-8ce1-a44b12f31d58",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
