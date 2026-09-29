@@ -1,5 +1,16 @@
 # chronarch
 
+For development, run from the repo root with `CHRONARCH_DEV=1 go run ./cmd/chronarch`.
+This uses `.chronarch/config.toml` and `.chronarch/chronarch.db` in the current
+working directory (ignored by Git). Without `CHRONARCH_DEV=1`, config and data
+use OS user directories. An explicit `storage.path` in the selected config
+file overrides the default database path. The CLI commands are not yet backed
+by storage; do not rely on them to record work hours.
+
+`go-sqlite3` requires CGO and a C compiler. If macOS reports
+`ld: library not found for -lresolv`, use
+`CC=/usr/bin/clang SDKROOT="$(xcrun --show-sdk-path)" CHRONARCH_DEV=1 go run ./cmd/chronarch`.
+
 ```text
 chronarch/
 ├── cmd/
@@ -11,6 +22,8 @@ chronarch/
 │   ├── domain/
 │   │   ├── project.go          # Core entities and business rules
 │   │   └── repository.go       # Interfaces owned by the domain/app layer
+│   │   └── session.go
+│   │   └── id.go       # Interfaces owned by the domain/app layer
 │   ├── config/
 │   │   └── config.go
 │   ├── storage/
