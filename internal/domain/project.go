@@ -3,9 +3,9 @@ package domain
 type ProjectID string
 
 type Project struct {
+	id          ProjectID
 	name        string
 	description string
-	id          ProjectID
 }
 
 func NewProject(name, description string) (*Project, error) {
@@ -15,10 +15,18 @@ func NewProject(name, description string) (*Project, error) {
 	}
 
 	return &Project{
+		id,
 		name,
 		description,
-		id,
 	}, nil
+}
+
+func NewProjectWithID(id ProjectID, name, description string) *Project {
+	return &Project{
+		id,
+		name,
+		description,
+	}
 }
 
 func (p *Project) Name() string { return p.name }
